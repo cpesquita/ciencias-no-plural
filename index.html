@@ -30,7 +30,7 @@ h1{
     margin: 40px 300px 40px 300px;
   }
 }
-        h1, h2, h3 { color: #003366; }
+        h1, h2, h3, h4 { color: #003366; }
         ul { margin-bottom: 30px; }
         a { text-decoration: none; color: #0055aa; }
         a:hover { text-decoration: underline; }
@@ -66,6 +66,61 @@ h1{
     max-width: 300px;
   }
 }
+
+.button-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.button-container a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 22px;
+  background-color: #003366;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.button-container a:hover {
+  background-color: #0055aa;
+  text-decoration: none;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+/* Style the label as a clickable "See more / See less" link */
+.toggle-label {
+  color: #0055aa;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Initial text on the label */
+.toggle-label::after {
+  content: "Ler mais";
+}
+
+/* Hide the extra content by default */
+.toggle-content {
+  display: none;
+  margin-top: 10px;
+}
+
+/* Show content when checkbox is checked */
+.toggle-checkbox:checked + .toggle-label + .toggle-content {
+  display: block;
+}
+
+/* Change label text when checkbox is checked */
+.toggle-checkbox:checked + .toggle-label::after {
+  content: "";
+}
     </style>
 </head>
 <body>
@@ -94,7 +149,13 @@ CIÊNCIAS no Plural é uma ambição, é a convicção de que a força de CIÊNC
 </p>
 </div>
 
-<h2>Membros Efetivos</h2>
+<div class="button-container">
+  <a href="#manifesto">Manifesto</a>
+  <a href="#bios">Ver Biografias</a>
+  <a href="mailto:ramelo@ciencias.ulisboa.pt">Contactar</a>
+</div>
+
+<h2 id="bios">Membros Efetivos</h2>
 <ol>
 <li><a href="#nuno">Nuno Garcia dos Santos</a>, P. Catedrático, D. Física</li>
 <li><a href="#catia">Cátia Pesquita</a>, P. Associada, D. Informática</li>
@@ -329,6 +390,73 @@ A sua investigação centra-se na biologia da conservação de peixes em rios in
     <p>Ricardo Alexandre Perdiz de Melo, Biólogo (C.P. n.º 83), é Professor Associado no Departamento de Biologia da Faculdade de Ciências da Universidade de Lisboa (FCUL), onde exerce a carreira docente desde 1986. Doutorou-se pela Universidade da Califórnia, Santa Bárbara, em 1992 e é investigador integrado do MARE-Centro de Ciências do Mar e do Ambiente e do Laboratório Associado ARNET- Rede de Investigação Aquática. A sua investigação tem incidido sobre a biologia, a ecologia e as aplicações das algas marinhas, bem como sobre a monitorização e a avaliação da qualidade ecológica da água. É membro Especialista do Comité Português para a Comissão Oceanográfica Intergovernamental da UNESCO. Na FCUL tem desempenhado vários cargos a nível departamental e da UID, foi membro da Assembleia de Representantes, do Conselho de Escola, do Conselho de Coordenadores de Estruturas de I&D e do Conselho Científico.
 </p>
   </div>
+</div>
+
+<h2 id="manifesto">Manifesto: Eu Sou Plural</h2>
+
+<h4>Introdução</h4>
+<p>Cada pessoa que faz parte da Faculdade de Ciências da Universidade de Lisboa, quer seja docente, investigador, técnico, administrativo, ou estudante, é, ela própria, uma síntese de múltiplas dimensões. Tem uma história, uma área de conhecimento, uma forma de estar na instituição, um conjunto de valores e de aspirações. É, por isso, plural. E é dessa pluralidade individual que nasce a riqueza colectiva de CIÊNCIAS.
+</p><p>"Eu sou Plural" é uma afirmação de identidade e uma declaração de princípios. Significa que as pessoas, e não apenas os processos ou os organigramas, estão no centro das decisões e das estratégias. Significa que o bem comum prevalece sobre as vantagens individuais. E significa, acima de tudo, que a força de CIÊNCIAS nasce da diversidade das suas pessoas e da forma como, em conjunto, criam e partilham conhecimento.
+</p><p>A lista CIÊNCIAS no Plural candidata-se ao Conselho de Escola com esta convicção: que honrar a pluralidade de CIÊNCIAS é condição necessária para construir uma instituição à altura dos desafios do presente e do futuro. Fá-lo com espírito construtivo, como parceira comprometida de um projeto coletivo em que lideranças, comunidade académica e estudantes desempenham papéis complementares e indispensáveis.
+</p>
+
+
+<h4>1. A Universidade Portuguesa e a FCUL: Uma Responsabilidade Partilhada</h4>
+<p>A Universidade é o lugar onde uma sociedade pensa sobre si própria, forma os cidadãos que a vão transformar e produz o conhecimento que sustenta o seu desenvolvimento. Quando é forte, o país tem mais recursos para enfrentar a incerteza. Quando é negligenciada, as consequências fazem-se sentir durante décadas.
+Portugal atravessa um momento singular. A transformação digital, a urgência da transição ecológica e as tensões geopolíticas que redesenham as cadeias de valor globais colocam à Universidade portuguesa exigências sem precedentes. Não basta formar licenciados: é preciso formar pessoas capazes de pensar em contextos de crescente complexidade e de liderar processos de mudança.
+Neste quadro, a FCUL ocupa uma posição de enorme potencial. Enquanto escola da Universidade de Lisboa, a sua capacidade de formar cientistas e engenheiros de excelência, de produzir investigação de referência e de transferir conhecimento para a sociedade faz dela um activo estratégico do país. A Europa, por seu lado, define nas suas prioridades de investigação e inovação um papel central para entidades de ensino superior como CIÊNCIAS, não apenas como receptoras de financiamento, mas como parceiras na construção das agendas científicas que moldarão o futuro do continente.
+</p><p>Ser Plural significa reconhecer que a FCUL não existe para si própria. Existe para o país, para a Europa, e para um mundo que precisa de mais ciência e de mais conhecimento partilhado. Essa consciência deve inspirar cada decisão, nas salas de aula, nos laboratórios, e nos órgãos de governação.
+</p><p>A lista CIÊNCIAS no Plural compromete-se a exercer as competências do Conselho de Escola com sentido estratégico, responsabilidade institucional e visão de longo prazo, alinhando cada ato com esta ambição de uma FCUL plural, exigente e plenamente comprometida com o desenvolvimento científico e social que lhe cabe servir.
+</p>
+<input type="checkbox" id="toggle" class="toggle-checkbox" />
+<label for="toggle" class="toggle-label"></label>
+
+<div class="toggle-content">
+<h4>2. A Identidade de CIÊNCIAS no Futuro: Excelência com Propósito</h4>
+<p>Que FCUL queremos ser daqui a dez anos?  Será fácil afirmar que queremos uma instituição que una excelência e acessibilidade, exigência e abertura, identidade e capacidade de renovação. Esse caminho constrói-se nas decisões do dia a dia, na forma como governamos, valorizamos as pessoas e comunicamos o que fazemos.
+CIÊNCIAS tem um ativo extraordinário: uma reputação construída ao longo de mais de um século, assente na qualidade da investigação, na solidez da formação e na capacidade de atrair pessoas de elevado talento. Consolidar e ampliar esse ativo é uma responsabilidade coletiva.
+A identidade futura de CIÊNCIAS deve assentar em três pilares. O primeiro é a excelência acessível, a capacidade de ser exigente sem ser fechada, de cultivar a qualidade criando condições para que cada pessoa dê o seu melhor ao longo do percurso. O segundo é a coerência entre valores e práticas: uma instituição que afirma valorizar a diversidade deve demonstrá-lo nas suas lideranças e processos. O terceiro é a capacidade de narrar a própria história com assertividade: CIÊNCIAS tem descobertas, pessoas e impactos extraordinários a contar, e fazê-lo bem é também uma forma de construir identidade no espaço académico europeu.
+</p><p>Eu sou Plural significa, aqui, que a identidade de CIÊNCIAS não é monolítica. É uma síntese dinâmica de disciplinas, culturas e gerações, e é essa síntese que a torna única. 
+</p><p>A nossa lista compromete-se a orientar a sua ação no Conselho de Escola para reforçar estes pilares — excelência acessível, coerência institucional e afirmação clara da identidade de CIÊNCIAS — assegurando que as decisões estratégicas consolidem a sua reputação, valorizem as pessoas e projetem, com ambição e responsabilidade, a Escola que queremos ser na próxima década, assumindo plenamente que cada escolha tomada hoje terá impacto duradouro e definirá o caminho que muitos de nós continuaremos a percorrer.
+</p>
+
+
+
+<h4>3. As Lideranças nas IES: Contexto, Desafios e Oportunidades</h4>
+<p>Liderar uma instituição de ensino superior em Portugal é, hoje, uma tarefa de crescente complexidade. O quadro legal tem evoluído de forma significativa, com novas exigências de prestação de contas, mecanismos reforçados de avaliação externa e políticas europeias de financiamento e investigação que colocam as universidades perante oportunidades e responsabilidades acrescidas.
+Neste contexto, as lideranças das IES são chamadas a equilibrar múltiplas dimensões: a autonomia universitária e a transparência perante a sociedade; a liberdade académica e a eficiência organizacional; a missão de serviço público e a sustentabilidade financeira. Navegar entre estas tensões exige visão estratégica, sensibilidade para o quotidiano das comunidades e capacidade de construir consensos.
+</p><p>O Conselho de Escola tem, neste quadro, um papel construtivo e essencial: acompanhar, questionar, clarificar prioridades, avaliar criticamente e propor melhorias que possam contribuir para que as lideranças possam desenvolver o seu trabalho nas melhores condições. Não como instância de controlo adversarial, mas como espaço de debate qualificado onde a pluralidade de perspectivas enriquece as decisões. Um Conselho de Escola participativo, atento e bem informado é, para uma Direção, um recurso, não um obstáculo.
+</p><p>A lista CIÊNCIAS no Plural compromete-se a exercer este mandato com preparação, presença e sentido de responsabilidade partilhada. Porque a boa governação de CIÊNCIAS é um projecto de todos.
+</p>
+<h4>4. Reconhecimento e Inclusividade: Cada Pessoa Importa</h4>
+<p>Uma das questões mais importantes para o futuro das instituições de ensino superior é o reconhecimento efectivo de todas as carreiras e de todas as pessoas que as constituem. Técnicos de laboratório, profissionais administrativos, bolseiros, investigadores em início de carreira, cada um destes contributos é indispensável para o funcionamento de uma instituição da complexidade de CIÊNCIAS.
+Reconhecer esse contributo tem múltiplas dimensões. Tem uma dimensão material que inclui condições de trabalho adequadas, acesso a formação contínua, percursos de progressão claros. Tem uma dimensão simbólica, onde a visibilidade, o agradecimento, a participação nos processos que afetam o trabalho de cada um devem ser prioridade. E tem uma dimensão cultural que é fundamental: a construção de ambientes em que toda a gente se sente bem-vinda, respeitada e capaz de contribuir.
+A inclusividade estende-se igualmente à diversidade de género nas lideranças, à acessibilidade para pessoas com necessidades específicas e à criação de condições equitativas para estudantes de diferentes origens e trajectórias. Uma FCUL inclusiva não é um ideal abstracto: é uma condição de excelência.
+</p><p>Eu sou Plural significa, neste domínio, que cada pessoa que pertence a CIÊNCIAS traz uma dimensão insubstituível. Valorizá-la é tornar a instituição mais forte.
+</p>
+<h4>5. Internacionalização, Transferência de Conhecimento e Relação com a Sociedade</h4>
+<p>A internacionalização é hoje uma condição de relevância académica. CIÊNCIAS tem um historial sólido de participação em programas europeus e internacionais, de atração de talento internacional e de parcerias com instituições de referência, um activo que importa consolidar e ampliar. Mas a internacionalização deve ser uma dimensão integrada da identidade institucional, visível nas salas de aula, nos laboratórios e na cultura quotidiana da faculdade.
+No plano da transferência de conhecimento, CIÊNCIAS está particularmente bem posicionada para liderar. Transformar os resultados da investigação em valor tangível para a sociedade, através da colaboração com empresas, da participação em processos de decisão pública, ou da criação de novos instrumentos tecnológicos, o que é uma forma de cumprir integralmente a missão de serviço público da faculdade. É também um caminho para uma maior sustentabilidade institucional.
+A relação com a sociedade vai, porém, além da esfera económica. Inclui a participação dos académicos no debate público, a contribuição para o delinear de políticas públicas, a produção de conhecimento acessível a todos os cidadãos, e a afirmação da ciência como bem comum e pilar da democracia. Uma FCUL presente na esfera pública é uma FCUL mais confiável e mais necessária.
+</p><p>Eu sou Plural significa, aqui, que a ciência que se faz em CIÊNCIAS pertence, em última análise, à sociedade que a financia e à humanidade que dela beneficia.
+</p>
+<h4>6. Os Estudantes e o Futuro: Uma Voz que Constrói</h4>
+<p>Qualquer visão para o futuro de CIÊNCIAS que não coloque os estudantes no seu centro é uma visão condenada, incapaz de cumprir a missão fundamental da Universidade de formar, capacitar e transformar pessoas através do conhecimento. Os estudantes são membros plenos da comunidade académica, com o direito e a responsabilidade de participar nas decisões que moldam a sua experiência formativa e o seu futuro profissional. CIÊNCIAS será a sua Alma Mater, para sempre.
+A diversidade crescente do corpo estudantil, em termos de origem, trajetória e expectativas, é uma riqueza que a instituição deve saber acolher. Garantir condições reais de aproveitamento para todos, combater o abandono precoce, e preparar os estudantes para um mercado de trabalho em rápida transformação são desafios que pedem respostas co-construídas com os próprios estudantes, e não apenas para eles.
+</p><p>Uma FCUL plural ouve os seus estudantes como prática regular, não apenas quando há problemas. O estudante que passa a fazer parte de CIÊNCIAS traz consigo aspirações, contributos e uma perspectiva fresca sobre a instituição que enriquece qualquer processo de reflexão estratégica.
+</p>
+<h4>7. Uma Atitude Proactiva: Parceiros da Mudança</h4>
+<p>As instituições que enfrentam a mudança de forma proativa, antecipando desafios, experimentando soluções, aprendendo com os resultados, são as que melhor servem as comunidades que as constituem. CIÊNCIAS tem a dimensão, a reputação e o talento humano necessários para ser uma dessas instituições.
+Ser proativo não significa ser imprudente. Significa ter a coragem de colocar as perguntas difíceis antes de serem as circunstâncias a colocá-las. Significa construir o futuro em vez de o esperar. E significa reconhecer que as melhores decisões nascem do encontro de perspectivas diversas, ou seja, do plural.
+</p><p>A lista CIÊNCIAS no Plural quer ser parte deste processo: contribuindo com rigor e independência para os debates do Conselho de Escola, apoiando as lideranças na identificação de oportunidades e na resolução de desafios, e garantindo que a pluralidade da nossa comunidade se reflecte nas decisões que moldam o futuro da faculdade.
+</p>
+<h4>Conclusão: Eu Sou CIÊNCIAS. Eu Sou Plural.</h4>
+<p>Todos os temas percorridos ao longo deste texto convergem para uma ideia central: CIÊNCIAS é, e deve continuar a ser, uma instituição construída por pessoas, para pessoas, em nome de um bem que nos ultrapassa a cada um de nós.
+Essa ideia exige que cada voz, de docente, investigador, técnico, administrativo, estudante, seja ouvida e valorizada. Exige que os órgãos de governação funcionem com rigor, abertura e sentido de responsabilidade partilhada. E exige que todos — lideranças e comunidade, Direção e Conselho de Escola — trabalhem coordenadamente e com um objetivo: a de uma FCUL mais forte, mais inclusiva e mais presente no mundo.
+</p><p>"Eu sou Plural" é o reconhecimento de que nenhuma dessas vozes é dispensável. A lista CIÊNCIAS no Plural candidata-se ao Conselho de Escola com o compromisso de defender este princípio em cada deliberação e em cada decisão, não porque seja fácil, mas porque é necessário. A composição da lista reflete assim a pluralidade de CIÊNCIAS, aliando à representatividade um compromisso claro com o exercício responsável e continuado do mandato.
+</p><p>Eu sou CIÊNCIAS. Eu sou Plural. E nós acreditamos que, juntos, podemos construir a FCUL que esta e as próximas gerações merecem.
+</p>
+
 </div>
 
 </body>
